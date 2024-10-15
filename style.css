@@ -1,0 +1,112 @@
+body {
+    background-image: url(images/22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar a:hover{
+    box-shadow: 0 0 10px rgb(47, 144, 235);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px #4c6bf5;
+}
+
+
+.navbar li{
+    float: left;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+div{
+    border: 1px solid rgb(40, 106, 247);
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    padding: 50px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: auto; 
+    box-sizing: border-box; 
+}
+
+div:hover{
+    box-shadow: 0 0 15px gray;
+    transition: 0.5s;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h2:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px #4c6bf5;
+}
+
+
+h2:hover + h1{
+    display: block;
+    transition: 1s;
+    color: blue;
+}
+
+h2:hover + h1, h1:hover{
+    display: block;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px #4c6bf5;
+}
+
+h2::first-letter{
+    color: blue;
+}
+
+h1{
+    font-size: 90px;
+    display: none;
+}
+
+/*
+h1:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 1s;
+    font-size: 115px;
+    text-shadow: 2px 2px 4px #0979f8;
+}
+    */
+
+h1::first-letter{
+    color: blue;
+}

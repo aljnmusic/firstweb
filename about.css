@@ -1,0 +1,87 @@
+body {
+    background-image: url(images/22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar a:hover{
+    box-shadow: 0 0 10px rgb(47, 144, 235);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px #4c6bf5;
+}
+
+
+.navbar li{
+    float: left;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.me{
+    position: absolute;              
+    top: 50%;                       
+    left: 50%;                      
+    transform: translate(-50%, -50%); 
+    text-align: center;  
+}
+
+.me img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(47, 144, 235);
+    transition: opacity 0.3s ease;
+}
+
+.me img:hover{
+    display: none;
+}
+/*  */
+
+.me p{
+    height: 250px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(47, 144, 235);
+    
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;                       
+    left: 50%;                      
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    text-align: center;
+}
+
+.me img:hover + p {
+    display: block; /* Make it block when image is hovered */
+    opacity: 1; /* Fade in the paragraph */
+}
